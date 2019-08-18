@@ -257,7 +257,7 @@ void relocalization_callback(const sensor_msgs::PointCloudConstPtr &points_msg)
 */
 void process()
 {
-    while (true)
+    while (ros::ok())
     {
         std::vector<std::pair<std::vector<sensor_msgs::ImuConstPtr>, sensor_msgs::PointCloudConstPtr>> measurements;
         
